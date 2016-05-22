@@ -1,4 +1,4 @@
-#project introduction#
+#Project Introduction#
 *************
 ##resource file##
 1. TempTestJavaServer is a TCP server which receives data from Android client and writes data to excel with apache open source project called POI
