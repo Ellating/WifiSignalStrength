@@ -1,0 +1,149 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:debuggable="true"
+    android:background="#eee"
+    tools:context=".MainActivity" >
+
+
+    <TextView
+        android:id="@+id/text_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+       
+         />
+      
+        <Button
+        android:id="@+id/button_refresh"
+        android:onClick="onClickRefresh"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:text="开始" />
+
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/text_id"
+            android:layout_below="@+id/button_refresh"
+            android:layout_marginTop="71dp"
+            android:text="+" />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/button1"
+            android:layout_alignBottom="@+id/button1"
+            android:layout_centerHorizontal="true"
+            android:text="-" />
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@+id/button1"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="175dp"
+            android:text="+" />
+        
+       
+     
+        
+
+        <Button
+            android:id="@+id/button4"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/button3"
+            android:layout_alignBottom="@+id/button3"
+            android:layout_alignLeft="@+id/button2"
+            android:text="-" />
+
+        <EditText
+            android:id="@+id/editText1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/button2"
+            android:layout_alignBottom="@+id/button2"
+            android:layout_alignLeft="@+id/button_refresh"
+            android:layout_alignParentRight="true"
+            android:ems="10" >
+
+            <requestFocus />
+        </EditText>
+
+        <EditText
+            android:id="@+id/editText2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/button4"
+            android:layout_alignLeft="@+id/editText1"
+            android:layout_alignParentRight="true"
+            android:ems="10" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/button2"
+            android:layout_alignLeft="@+id/button1"
+            android:text="X-Cordinate" />
+        
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/send"
+            android:layout_alignBottom="@id/button3"
+            android:text="" />
+          <Button
+           android:id="@+id/makesure"
+           android:layout_width="fill_parent"
+           android:layout_height="wrap_content"
+           android:layout_above="@id/send"
+           android:text="确认坐标和IP后开始" />
+        
+        
+          <Button
+           android:id="@+id/send"
+           android:layout_width="fill_parent"
+           android:layout_height="wrap_content"
+           android:layout_alignParentBottom="true"
+           android:text="测试结束，发送至服务器" />
+
+          <TextView
+              android:id="@+id/textView2"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_above="@+id/button4"
+              android:layout_alignLeft="@+id/button3"
+              android:text="Y-Cordinate" />
+
+         <EditText
+             android:id="@+id/Ip_edit"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_above="@+id/makesure"
+             android:layout_alignLeft="@+id/makesure"
+             android:layout_marginBottom="16dp"
+             android:inputType="text"
+             android:ems="40" />
+
+         <TextView
+             android:id="@+id/ServerIp"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_above="@+id/Ip_edit"
+             android:layout_alignRight="@+id/button3"
+             android:text="Server-Ip" />
+    
+</RelativeLayout>

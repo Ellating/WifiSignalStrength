@@ -1,0 +1,9 @@
+# view AndroidManifest.xml #generated:36
+-keep class com.example.wifisignalstrength.JavaServiceClass { <init>(...); }
+
+# view AndroidManifest.xml #generated:26
+-keep class com.example.wifisignalstrength.MainActivity { <init>(...); }
+
+# onClick res/layout/activity_main.xml #generated:21
+-keepclassmembers class * { *** onClickRefresh(...); }
+
